@@ -1,0 +1,76 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+
+    &-sec1{
+        margin: 3rem 4rem;
+        line-height: 35px;
+
+        &>h1 a{
+            text-decoration: none;
+            color: rgb(8, 125, 203);
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 49.6px;
+        }
+
+        &>p a{
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 27px;
+            color: #002A42;
+        }
+
+        &-logo{
+            width: 50px;  // Adjust the width to shrink the size
+            height: auto; // Maintain the aspect ratio
+
+             &:hover {
+                opacity: 0.8; // Example hover effect
+              }
+        }
+
+        // &>div a{
+            
+           
+        // }
+    }
+
+    &-sec2{
+        display: flex;
+        flex-direction: row;
+        line-height: 35px;
+        width:fit-content;
+        justify-content: flex-end;
+        // text-align: right;
+        margin-left: auto;
+        
+        
+
+        
+
+        &>div{
+            margin: 3rem 3rem;
+
+
+            &>h3 a{
+                text-decoration: none;
+                color: rgb(8, 125, 203);
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 27px;
+                color: #028DDB;
+            }
+    
+            &>p a{
+                text-decoration: none;
+                color: #002A42;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+    }
+}

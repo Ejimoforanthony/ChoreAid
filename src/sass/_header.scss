@@ -1,0 +1,36 @@
+.header{
+    
+  display: flex;
+  flex-direction: row;
+  height: 5rem; // equivalent to h-20 in Tailwind
+  align-items: center; // equivalent to items-center in Tailwind
+  justify-content: space-between; // equivalent to justify-between in Tailwind
+  background-color: #fff; // equivalent to bg-white in Tailwind
+  color: #000; // equivalent to text-black in Tailwind
+  
+
+  @media (min-width: 1024px) {
+    padding-left: 6rem; // equivalent to lg:px-24 in Tailwind
+    // padding-right: 6rem;
+
+  }
+  &-title>a{
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: #028DDB;
+    
+  }
+    
+}
+
+.menu{
+    z-index: 10;
+    display: none;
+    cursor: pointer;
+
+    @media(max-width: 37.5rem){
+        display: block;
+    }
+}
