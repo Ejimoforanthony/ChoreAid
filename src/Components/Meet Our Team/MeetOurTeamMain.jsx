@@ -1,13 +1,10 @@
-import React from 'react'
-import MainLayout from '../Layout/MainLayout'
+import Header from "../Layout/Header"
 
 const MeetOurTeamMain = () => {
   return (
-    <MainLayout>
-    <div>
-        Meet Our Team
-    </div>
-</MainLayout>
+    <>
+    <Header />
+    </>
   )
 }
 

@@ -1,13 +1,19 @@
-import React from 'react'
-import MainLayout from '../Layout/MainLayout'
+import Header from "../Layout/Header"
+import Main from './main'
+import ServicesSection from "./services" 
+import FAQ from "./Faq"
+import Footer from "../Layout/Footer"
+
 
 const ServicesMain = () => {
   return (
-    <MainLayout>
-    <div>
-        Service
-    </div>
-</MainLayout>
+<>
+<Header />
+<Main />
+<ServicesSection />
+<FAQ />
+<Footer />
+</>
     
   )
 }

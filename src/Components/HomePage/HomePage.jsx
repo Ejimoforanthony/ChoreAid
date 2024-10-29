@@ -1,16 +1,16 @@
-import React from 'react'
-import MainLayout from '../Layout/MainLayout';
 import HomePageBot from './HomePageBot';
 import HomePageTop from './HomePageTop';
+import Header from '../Layout/Header';
+import Footer from '../Layout/Footer'
 
 const HomePage = () => {
   return (
-    <MainLayout>
         <div>
+            <Header />
             <HomePageTop />
             <HomePageBot />
+            <Footer />
         </div>
-    </MainLayout>
   )
 }
 

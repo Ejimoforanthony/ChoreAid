@@ -1,9 +1,9 @@
 import HomePage from './Components/HomePage/HomePage';
-import './sass/styles.css'
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import Services from './Components/Services/ServicesMain';
 import HelpCenter from './Components/Help Center/HelpCenterMain';
 import MeetOurTeam from './Components/Meet Our Team/MeetOurTeamMain';
+import './app.css'
 
 
 const App = () => {

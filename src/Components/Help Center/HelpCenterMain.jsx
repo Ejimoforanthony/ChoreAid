@@ -1,13 +1,18 @@
-import React from 'react'
-import MainLayout from '../Layout/MainLayout'
+import Header from './Header'
+import Main from './main'
+import HowItWorks from './steps'
+import FAQ from '../Services/Faq'
+import Footer from '../Layout/Footer'
 
 const HelpCenterMain = () => {
   return (
-    <MainLayout>
-    <div>
-        Help Center
-    </div>
-</MainLayout>
+    <>
+    <Header />
+    <Main />
+    <HowItWorks />
+    <FAQ />
+    <Footer />
+    </>
   )
 }
 

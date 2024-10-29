@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Logo from '../../images/logo-icon.png';
 import { RiMenu3Fill } from 'react-icons/ri';
 import { MdCancel } from 'react-icons/md';
@@ -6,13 +6,27 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleClick = () => {
     setShowNav(!showNav);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > 20) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="bg-white shadow-md fixed w-full z-50">
+    <header className={`fixed w-full z-50 transition-colors duration-300 ${scrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className="flex items-center justify-between p-4">
         <img src={Logo} alt="Company Name" className="h-10" />
         <div className="flex-1 flex justify-center">

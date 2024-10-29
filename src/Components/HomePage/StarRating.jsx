@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 function StarRating() {
   const [rating, setRating] = useState(0); // Initial rating is 0

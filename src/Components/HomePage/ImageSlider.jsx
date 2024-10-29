@@ -1,4 +1,3 @@
-import React from 'react'
 import StarRating from './StarRating';
 import SeeMoreComponent from './SeeMore';
 import Faith from '../../images/FaithIgwe.jpeg' ;
@@ -170,16 +169,16 @@ const HomePageBot = () => {
             </div>
             <h2 className='popular'>Popular Projects</h2>
             
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="carousel-item"><img src={SliderErrand} alt="Errand Boy"/></div>
-                    <div class="carousel-item"><img src={SliderBabysitter} alt="Baby sitter"/></div>
-                    <div class="carousel-item"><img src={SliderCooking} alt="cook"/></div>
-                    <div class="carousel-item"><img src={SliderCleaning} alt="Cleaner"/></div>
-                    <div class="carousel-item"><img src={SliderErrand} alt="Errand Boy"/></div>
+            <div className="carousel-container">
+                <div className="carousel-track">
+                    <div className="carousel-item"><img src={SliderErrand} alt="Errand Boy"/></div>
+                    <div className="carousel-item"><img src={SliderBabysitter} alt="Baby sitter"/></div>
+                    <div className="carousel-item"><img src={SliderCooking} alt="cook"/></div>
+                    <div className="carousel-item"><img src={SliderCleaning} alt="Cleaner"/></div>
+                    <div className="carousel-item"><img src={SliderErrand} alt="Errand Boy"/></div>
                 </div>
-                <button class="carousel-btn left-btn">←</button>
-                <button class="carousel-btn right-btn">→</button>
+                <button className="carousel-btn left-btn">←</button>
+                <button className="carousel-btn right-btn">→</button>
             </div>
 
 

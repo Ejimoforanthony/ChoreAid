@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import LeftArrowIcon from '../../images/left-arrow.png'; // Update the path accordingly
-import RightArrowIcon from '../../images/right-arrow.png'; // Update the path accordingly
+import { useState } from 'react';
+import LeftArrowIcon from '../../images/left-arrow.png';
+import RightArrowIcon from '../../images/right-arrow.png';
 
 function SeeMoreComponent({ article }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,18 +10,25 @@ function SeeMoreComponent({ article }) {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
       {!isExpanded && (
-        <button onClick={handleSeeMore} className='see-more'>
-          See More <img src={RightArrowIcon} alt="Right Arrow" className="arrow-icon" />
+        <button
+          onClick={handleSeeMore}
+          className="flex items-center text-blue-500 font-semibold hover:text-blue-700 transition duration-200"
+        >
+          See More
+          <img src={RightArrowIcon} alt="Right Arrow" className="ml-2 w-4 h-4" />
         </button>
       )}
 
       {isExpanded && (
         <>
-          {article}
-          <button onClick={handleSeeMore} className='see-more'>
-            <img src={LeftArrowIcon} alt="Left Arrow" className="arrow-icon" /> See Less 
+          <div className="mt-4">{article}</div>
+          <button
+            onClick={handleSeeMore}
+            className="flex items-center text-blue-500 font-semibold hover:text-blue-700 transition duration-200 mt-4"
+          >
+            <img src={LeftArrowIcon} alt="Left Arrow" className="mr-2 w-4 h-4" /> See Less
           </button>
         </>
       )}
@@ -30,4 +37,3 @@ function SeeMoreComponent({ article }) {
 }
 
 export default SeeMoreComponent;
-
