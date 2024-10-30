@@ -1,14 +1,14 @@
 import HomePage from './Components/HomePage/HomePage';
 import { BrowserRouter as Router, Route, Routes, } from 'react-router-dom';
 import Services from './Components/Services/ServicesMain';
-import HelpCenter from './Components/Help Center/HelpCenterMain';
-import MeetOurTeam from './Components/Meet Our Team/MeetOurTeamMain';
+import HelpCenter from './Components/HelpCenter/HelpCenterMain';
+import MeetOurTeam from './Components/MeetOurTeam/MeetOurTeamMain';
 import './app.css'
 
 
 const App = () => {
   return (
-    <div>
+    <>
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -18,7 +18,7 @@ const App = () => {
         <Route path='/MeetOurTeam' element={<MeetOurTeam />}/>
       </Routes>
     </Router>
-    </div>
+    </>
   )
 }
 
