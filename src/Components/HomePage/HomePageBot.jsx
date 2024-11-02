@@ -1,9 +1,5 @@
-import StarRating from './StarRating';
+// import StarRating from './StarRating';
 // import SeeMoreComponent from './SeeMore';
-import Faith from '../../images/FaithIgwe.jpeg';
-import Micheal from '../../images/MichealNgah.jpeg';
-import Isaac from '../../images/IsaacAliu.jpeg';
-import Sandra from '../../images/SandraIkem.jpeg';
 import John from '../../images/John Benedict.jpeg';
 import Elizabeth from '../../images/Elizabeth Micheal.jpeg';
 import Google from '../../images/google.png';
@@ -14,6 +10,7 @@ import SliderErrand from '../../images/slider.Errands.jpeg';
 import SliderBabysitter from '../../images/slider.babysitter.jpeg';
 import SliderCooking from '../../images/slider.cooking.jpeg';
 import SliderCleaning from '../../images/cleaning.jpeg';
+import Slider from './teamSlider';
 
 const HomePageBot = () => {
  
@@ -27,42 +24,7 @@ const HomePageBot = () => {
         </p>
       </article>
 
-      <section className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg">
-          <img src={Faith} alt="Faith Igwe" className="w-24 h-24 rounded-full mb-4" />
-          <h2 className="text-lg font-semibold">Faith Igwe</h2>
-          <p className="text-gray-600">A professional babysitter, dedicated and hardworking</p>
-          <p className="mt-2 font-bold text-blue-500">20,000 NGN Per hour</p>
-          <StarRating />
-        </div>
-
-        <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg">
-          <img src={Micheal} alt="Micheal Ngah" className="w-24 h-24 rounded-full mb-4" />
-          <h2 className="text-lg font-semibold">Micheal Ngah</h2>
-          <p className="text-gray-600">A professional chef, dedicated and hardworking</p>
-          <p className="mt-2 font-bold text-blue-500">30,000 NGN Per hour</p>
-          <StarRating />
-        </div>
-
-        <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg">
-          <img src={Isaac} alt="Isaac Aliu" className="w-24 h-24 rounded-full mb-4" />
-          <h2 className="text-lg font-semibold">Isaac Aliu</h2>
-          <p className="text-gray-600">A trusted cleaner, dedicated and hardworking</p>
-          <p className="mt-2 font-bold text-blue-500">10,000 NGN Per hour</p>
-          <StarRating />
-        </div>
-      </section>
-
-      {/* See More Slider */}
-      <div className="my-8 overflow-x-auto flex space-x-8">
-        <div className="flex flex-col items-center p-4 border rounded-lg shadow-lg min-w-[250px]">
-          <img src={Sandra} alt="Sandra Ikem" className="w-24 h-24 rounded-full mb-4" />
-          <h2 className="text-lg font-semibold">Sandra Ikem</h2>
-          <p className="text-gray-600">A nurse and babysitter, dedicated and hardworking</p>
-          <p className="mt-2 font-bold text-blue-500">25,000 NGN Per hour</p>
-          <StarRating />
-        </div>
-      </div>
+      <Slider />
 
       {/* Statistics Section with Borders */}
       <section className="flex justify-around gap-4 sm:gap-6 my-8 px-4 sm:px-6 max-w-5xl mx-auto">
@@ -81,22 +43,24 @@ const HomePageBot = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="text-center my-8">
-        <h2 className="text-2xl font-semibold">What our clients are saying about us!</h2>
-        <div className="grid gap-y-10 md:gap-y-0 mt-4 sm:grid-cols-1 md:grid-cols-2">
-          <article className="flex flex-col  p-6 border rounded-lg shadow-lg w-72 h-48 mx-auto bg-gray-100">
-            <img src={John} alt="John Benedict" className="w-12 h-12 rounded-md mb-2" />
-            <p className="text-gray-700 text-center">They were responsive and always followed up to ensure our satisfaction.</p>
-            <h3 className="font-semibold mt-2">John Benedict</h3>
-          </article>
+      <section className="my-8 px-4">
+          <h2 className="text-2xl font-semibold text-center">What our clients are saying about us!</h2>
+          <div className="grid gap-y-6 max-w-2xl mx-auto md:gap-x-6 mt-4 sm:grid-cols-1 md:grid-cols-2 justify-center pt-6">
+            <article className="flex flex-col p-6 border rounded-lg shadow-lg w-80 h-52 mx-auto bg-gray-100">
+              <img src={John} alt="John Benedict" className="w-12 h-12 rounded-md mb-3" />
+              <p className="text-gray-700 text-center">They were responsive and always followed up to ensure our satisfaction.</p>
+              <h3 className="font-semibold mt-3">John Benedict</h3>
+            </article>
 
-          <article className="flex flex-col  p-6 border rounded-lg shadow-lg w-72 h-48 mx-auto bg-gray-100">
-            <img src={Elizabeth} alt="Elizabeth Micheal" className="w-12 h-12 rounded-md mb-2" />
-            <p className="text-gray-700 text-center">It's no exaggeration to say that I was lost before I found ChoreAid.</p>
-            <h3 className="font-semibold mt-2">Elizabeth Micheal</h3>
-          </article>
-        </div>
-      </section>
+            <article className="flex flex-col p-6 border rounded-lg shadow-lg w-80 h-52 mx-auto bg-gray-100">
+              <img src={Elizabeth} alt="Elizabeth Micheal" className="w-12 h-12 rounded-md mb-3" />
+              <p className="text-gray-700 text-center">It's no exaggeration to say that I was lost before I found ChoreAid.</p>
+              <h3 className="font-semibold mt-3">Elizabeth Micheal</h3>
+            </article>
+          </div>
+        </section>
+
+
 
       {/* Partners and Projects Sections */}
       <section className="text-center my-8">
@@ -133,13 +97,15 @@ const HomePageBot = () => {
         </div>
       </section>
 
-      <section className="relative bg-gray-800 text-white p-8">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <h1 className="text-3xl font-bold relative z-10">Key Points</h1>
-        <p className="mt-2 relative z-10">1. Trusted workers</p>
-        <p className="relative z-10">2. Flexible Booking</p>
-        <p className="relative z-10">3. Reliable Support</p>
+      <section className="bg-home h-[450px] bg-center bg-cover text-white text-center">
+        <div className="relative top-1/2 transform -translate-y-1/2">
+          <h1 className="text-4xl font-bold mb-4">Key Points</h1>
+          <p className="mt-2 text-2xl font-bold">1. Trusted workers</p>
+          <p className="text-2xl font-bold">2. Flexible Booking</p>
+          <p className="text-2xl font-bold">3. Reliable Support</p>
+        </div>
       </section>
+
     </div>
   );
 };

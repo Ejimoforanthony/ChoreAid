@@ -3,6 +3,7 @@ import Main from './main'
 import ServicesSection from "./services" 
 import FAQ from "./Faq"
 import Footer from "../Layout/Footer"
+import ContactForm from "../Layout/contact"
 
 
 const ServicesMain = () => {
@@ -12,6 +13,7 @@ const ServicesMain = () => {
 <Main />
 <ServicesSection />
 <FAQ />
+<ContactForm />
 <Footer />
 </>
     

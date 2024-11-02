@@ -4,6 +4,8 @@
 @tailwind utilities;
 
 
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -23,4 +25,8 @@ p{
 
 .bg-services{
     background-image: url("./images/bg-services.png");
+}
+
+.bg-home{
+    background-image: url("./images/KeyPointImg.jpeg");
 }

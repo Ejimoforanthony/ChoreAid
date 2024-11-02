@@ -4,9 +4,11 @@ import InstagramIcon from '../../images/icons8-instagram.svg';
 import GmailIcon from '../../images/icons8-gmail.svg';
 import ChoreAidLogo from '../../images/logo-icon.png'; 
 
+
 const Footer = () => {
   return (
     <footer className=' max-w-5xl mx-auto text-gray-800 py-16 p-6 '>
+
       <section className=' mx-auto flex flex-col md:flex-row justify-between'>
         <div className='mb-6 md:mb-0'>
           <h1 className='text-2xl font-bold mb-3'>

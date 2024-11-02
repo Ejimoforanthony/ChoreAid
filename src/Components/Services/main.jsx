@@ -2,7 +2,7 @@ const Main = () => {
     return (
         <div className="pt-[75px]">
         <div className="relative flex items-center justify-center min-h-[400px]  bg-cover bg-center bg-services">
-            <div className="flex items-center w-3/4 max-w-lg p-2 bg-blue-200 rounded-full shadow-lg">
+            <div className="sm:flex items-center w-3/4 max-w-lg p-2 hidden bg-blue-200 rounded-full shadow-lg">
             <input
                 type="text"
                 placeholder="Search for any service..."

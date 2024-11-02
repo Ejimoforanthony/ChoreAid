@@ -1,4 +1,4 @@
-import SearchBar from '../Layout/SearchBar';
+import { IoSearchOutline } from 'react-icons/io5';
 // import ReadMoreComponent from '../../images/ReadMore';
 import ChoreVid from '../../images/bg-home.png';
 import CleaningImage from '../../images/cleaning.jpeg';
@@ -35,14 +35,25 @@ function HomePageTop() {
           {/* end of the section  */}
       
       {/* the  search section of the page  */}
-      <div className="my-4  p-4 rounded-lg flex flex-col lg:flex-row items-center justify-center lg:space-x-4">
-          <div className="flex-1 mb-4 lg:mb-0 flex items-center">
-            <SearchBar onSearch={handleSearch} className="w-full" />
-          </div>
-          <button className="bg-[#002A42] text-white px-6 py-3 rounded-lg hover:bg-[#004057] transition-colors h-full">
-            Book Our Services
-          </button>
+  
+
+      <div className="my-4 p-4 rounded-lg flex flex-col lg:flex-row items-center justify-center lg:space-x-4 max-w-2xl mx-auto">
+        <div className="flex-1 mb-4 lg:mb-0 flex items-center">
+            <input
+                type="text"
+                placeholder="Search..."
+                className="flex-grow border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring focus:ring-[#004057] transition-all"
+                style={{ height: '48px' }} // Match the height of the button
+            />
+            <button onClick={handleSearch} className="bg-[#85c3e6] hidden  text-white px-4 py-3 rounded-lg hover:bg-[#7395d7] transition-colors md:flex items-center ml-2">
+                <IoSearchOutline className="h-5 w-5" />
+            </button>
         </div>
+        <button onClick={handleSearch} className="bg-[#85c3e6] text-white px-6 py-3 rounded-lg hover:bg-[#7395d7] transition-colors">
+            Book Our Services
+        </button>
+    </div>
+
         {/* end of the search section  */}
 
         <article className="text-center my-8">
