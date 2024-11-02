@@ -122,7 +122,7 @@ const Header = () => {
               </li>
               <li>
                 <NavLink 
-                  to="/LogIn" 
+                  to="/login" 
                   className={({ isActive }) => 
                     `py-2 bg-blue-500 text-white rounded-2xl hover:bg-blue-600 transition duration-200 ${isActive ? 'font-bold' : ''}`
                   }
