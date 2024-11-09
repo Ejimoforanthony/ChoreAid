@@ -3,6 +3,7 @@ import Main from './main'
 import HowItWorks from './steps'
 import FAQ from '../Services/Faq'
 import Footer from '../Layout/Footer'
+import HelpCenterBot from '../HelpCenter/HelpCenterBot'
 
 const HelpCenterMain = () => {
   return (
@@ -11,6 +12,7 @@ const HelpCenterMain = () => {
     <Main />
     <HowItWorks />
     <FAQ />
+    <HelpCenterBot />
     <Footer />
     </>
   )

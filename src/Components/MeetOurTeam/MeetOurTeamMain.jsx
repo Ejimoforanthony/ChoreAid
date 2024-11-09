@@ -2,6 +2,7 @@ import Header from "../Layout/Header"
 import Main from "./main"
 import TeamSection from "./teamSection"
 import Footer from "../Layout/Footer"
+import MeetOurTeamBot from "./MeetOTBot"
 
 const MeetOurTeamMain = () => {
   return (
@@ -9,6 +10,7 @@ const MeetOurTeamMain = () => {
       <Header />
       <Main />
       <TeamSection/>
+      <MeetOurTeamBot />
       <Footer />
     </>
   )
