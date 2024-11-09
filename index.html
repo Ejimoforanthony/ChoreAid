@@ -2,12 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    
+    <!-- Title and Description -->
+    <title>choreAid - Trusted Helpers for Your Household Needs</title>
+    <meta name="description" content="choreAid connects individuals and families with trusted helpers for household chores and errands. Simplify your life by finding reliable help for your home today!" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="choreAid, household chores, errands, trusted helpers, house cleaning, organizing, family support, household services" />
+    <meta name="author" content="choreAid" />
+    <link rel="canonical" href="https://choreaid.com" />
+
+    <!-- Social Media Metadata -->
+    <meta property="og:title" content="choreAid - Trusted Helpers for Your Household Needs" />
+    <meta property="og:description" content="choreAid connects individuals and families with trusted helpers for household chores and errands. Simplify your life by finding reliable help for your home today!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://choreaid.com" />
+    <meta property="og:image" content="https://choreaid.com/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Custom Fonts -->
+    <style>
+      @font-face {
+        font-family: 'MyCustomFont';
+        src: url('./CabinetGrotesk-Bold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: 'Font2';
+        src: url('./CabinetGrotesk-Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'MyCustomFont', sans-serif;
+      }
+
+      p, a, li {
+        font-family: 'Font2', sans-serif;
+      }
+    </style>
   </head>
   <body>
+    <!-- Main Application Root -->
     <div id="root"></div>
+
+    <!-- Main Script -->
     <script type="module" src="/src/index.jsx"></script>
   </body>
 </html>

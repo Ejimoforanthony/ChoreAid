@@ -4,6 +4,8 @@
 @tailwind utilities;
 
 
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -674,3 +676,6 @@ p{
 }
   
   
+.bg-home{
+    background-image: url("./images/KeyPointImg.jpeg");
+}

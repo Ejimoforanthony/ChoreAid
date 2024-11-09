@@ -1,4 +1,3 @@
-;
 import { IoSearchOutline } from 'react-icons/io5';
 
 function SearchBar({ query, handleInputChange, handleSearch }) {
