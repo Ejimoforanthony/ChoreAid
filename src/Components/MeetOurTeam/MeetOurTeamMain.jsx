@@ -3,7 +3,7 @@ import Main from "./main"
 import TeamSection from "./teamSection"
 import Footer from "../Layout/Footer"
 import MeetOurTeamBot from "./MeetOTBot"
-import FlexibleWork from "./tips"
+// import FlexibleWork from "./tips"
 
 const MeetOurTeamMain = () => {
   return (
@@ -12,7 +12,7 @@ const MeetOurTeamMain = () => {
       <Main />
       <TeamSection/>
       <MeetOurTeamBot />
-      <FlexibleWork />
+      {/* <FlexibleWork /> */}
       <Footer />
     </>
   )

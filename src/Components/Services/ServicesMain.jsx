@@ -4,7 +4,7 @@ import ServicesSection from "./services"
 import FAQ from "./Faq"
 import Footer from "../Layout/Footer";
 import Service_summary from "./service_summary"
-import ContactForm from "../Layout/contact"
+// import ContactForm from "../Layout/contact"
 
 
 const ServicesMain = () => {
@@ -15,7 +15,7 @@ const ServicesMain = () => {
 <ServicesSection />
 <FAQ />
 <Service_summary />
-<ContactForm />
+{/* <ContactForm /> */}
 <Footer />
 </>
     
