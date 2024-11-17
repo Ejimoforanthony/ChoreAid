@@ -1,147 +1,155 @@
-
 import Cook from '../../images/service.cooking.jpeg';
 import BabySitter from '../../images/service.babysitting.jpeg';
 import Errand from '../../images/service.errand.jpeg';
 import Cleaner from '../../images/service.cleaning.jpeg';
 
-const serviceMid = () => {
+const ServiceMid = () => {
   return (
-    <div>
-        <section className='service-cook'>
-      <div className='service-cook-Image'>
-           <img src={Cleaner} alt='cleaner on duty' className='service-cook-Image-Img'/>
-      </div>
-      <div className='service-cook-Describe'>
-           <h1>Cleaning</h1>
-           <p>ChoreAid offers comprehensive cleaning services tailored to
-              meet the diverse needs of individuals and families. The
-              cleaning services id divided into two distinct sections to 
-              provide flexibility and convenience for our customers:
-           </p>
-           <h2>1. Professional Cleaning Service</h2>
-           <h2>2. AssistKlin Cleaning Services</h2>
-      </div>
-    </section>
-    <article className='service-cooking'>
-      <div>
-        <h2>Professional Cleaning Service</h2>
-        <h3>Description:</h3>
-        <p>ChoreAid provides both the cleaning tools and the cleaning 
-          services. This option is ideal for customers who want a hassle-free
-          experience where everything is taken care of by our professional cleaners.
-        </p>
-        <h3>Features:</h3>
-        <p>-Thorough cleaning of all designated areas.<br></br>
-           -Suitable for customers who prefer not to handle cleaning 
-           logistics.<br></br>
-           -High-quality, eco-friendly cleaning products used.
-        </p>
-      </div>
-      <div>
-        <h2>AssistKlin Cleaning Service</h2>
-        <h3>Description:</h3>
-        <p>Customers provide the cleaning tools, and ChoreAid provides the cleaning services.
-           This option is cost effective and covenient for customers who already have cleaning
-           supplies and equipments at home.
-        </p>
-        <h3>Features:</h3>
-        <p>
-          -Professional cleaning service performed by choreAid cleaners.<br></br>
-          -Flexible and budget-friendly option.<br></br>
-          -Suitable for customers who prefer using their own cleaning products
-        </p>
-      </div>
-      <div>
-        <h2>Accomodation Types</h2>
-        <p>
-          Self-contained, One Bedroom, Two Bedroom, Three Bedroom, Four Bedroom and Above<br></br>
-          ChoreAid will provide the following services
-        </p>
-        <h3>i. General Cleaning</h3>
-        <h3>ii Fumigation</h3>
-      </div>
-    </article>
-            <section className='service-cook'>
-        <div className='service-cook-Image'>
-            <img src={Cook} alt='cook on duty' className='service-cook-Image-Img' />
+    <div className="container mx-auto px-4 py-8">
+      {/* Cleaning Section */}
+      <section className="flex flex-col lg:flex-row mx-4 lg:mx-20 gap-8 lg:gap-16 my-10 lg:my-20">
+        <div className="flex-1">
+          <img src={Cleaner} alt="cleaner on duty" className="w-full h-auto rounded-lg shadow-md" />
         </div>
-        <div className='service-cook-Describe'> 
-            <h1>Cooking</h1>
-            <p>ChoreAid offers a flexible cooking service where customers
-                provide all neccessary ingredients, and our professional cooks
-                provide the lobor and expertise to prepare the meals.
-            </p>
-            <h2>1. Meal Preparation</h2>
-            <h2>2. Specialty Cooking</h2>
+        <div className="flex-1">
+          <h1 className="font-extrabold text-3xl lg:text-4xl leading-snug text-[#002A42] underline py-4 lg:py-6 font-sans">Cleaning</h1>
+          <p className="font-light text-lg lg:text-xl leading-relaxed tracking-wide pb-6 lg:pb-10">
+            ChoreAid offers comprehensive cleaning services tailored to meet the diverse needs of individuals and families. The cleaning services are divided into two distinct sections to provide flexibility and convenience for our customers:
+          </p>
+          <h2 className="font-extrabold text-xl leading-snug text-[#002A42] pb-3 lg:pb-5">1. Professional Cleaning Service</h2>
+          <h2 className="font-extrabold text-xl leading-snug text-[#002A42] pb-3 lg:pb-5">2. AssistKlin Cleaning Services</h2>
         </div>
-        </section>
+      </section>
 
-        <article className='service-cooking'>
-        <div>
-            <h2>1. Meal Preparation</h2>
-            <p>ChoreAid offers three tiers of meal preparation services,
-            each tailored to different needs and serving sizes.
+      {/* Professional Cleaning Service Details */}
+      <article className="mx-4 lg:mx-20">
+        <div className="grid gap-8 lg:gap-10">
+          <div>
+            <h2 className="pt-8 lg:pt-16 text-[#002A42] font-light text-xl lg:text-2xl">Professional Cleaning Service</h2>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">Description:</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              ChoreAid provides both the cleaning tools and the cleaning services. This option is ideal for customers who want a hassle-free experience where everything is taken care of by our professional cleaners.
             </p>
-            <h3>i. Basic Meal:</h3>
-            <p>Description: Preparation of one dish serving 1-2 people.</p>
-            <h3>Features:</h3>
-            <p>-Ideal for small meals or individual servings.<br></br>
-            -Quick and efficient meal preparation.<br></br>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">Features:</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              - Thorough cleaning of all designated areas.<br />
+              - Suitable for customers who prefer not to handle cleaning logistics.<br />
+              - High-quality, eco-friendly cleaning products used.
             </p>
+          </div>
+          <div>
+            <h2 className="pt-8 lg:pt-16 text-[#002A42] font-light text-xl lg:text-2xl">AssistKlin Cleaning Service</h2>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">Description:</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              Customers provide the cleaning tools, and ChoreAid provides the cleaning services. This option is cost-effective and convenient for customers who already have cleaning supplies and equipment at home.
+            </p>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">Features:</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              - Professional cleaning service performed by ChoreAid cleaners.<br />
+              - Flexible and budget-friendly option.<br />
+              - Suitable for customers who prefer using their own cleaning products.
+            </p>
+          </div>
+          <div>
+            <h2 className="pt-8 lg:pt-16 text-[#002A42] font-light text-xl lg:text-2xl">Accommodation Types</h2>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              Self-contained, One Bedroom, Two Bedroom, Three Bedroom, Four Bedroom and Above<br />
+              ChoreAid will provide the following services:
+            </p>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">i. General Cleaning</h3>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">ii. Fumigation</h3>
+          </div>
         </div>
-        <div>
-            <h2>2. Specialty Cooking</h2>
-            <p>Chore_Aid provides specialty cooking services for unique culinary
-            needs and preferences
-            </p>
-            <h3>i. BBQ and Qrill</h3>
-            <p>Description: Expert preparation of BBQ and grilled dishes.</p>
-            <h3>Features:</h3>
-            <p>-Ideal for outdoor events and gatherings.<br></br>
-            -Professional grilling techniques.<br></br>
-            </p>
-        </div>
-        <div>
-            <h2>Large Cooking</h2>
-            <p>
-            Chore_Aid offers cooking services for larger groups and events, 
-            ensuring everyone is well-fed with delicious meals
-            </p>
-            <h3>i. 10-20 People</h3>
-            <h3>Description: Preparation of meals serving 10-20 people.</h3>
-            <p>-Suitable for medium-sized gatherings and events.<br></br>
-            -Efficient and large-scale meal preparation.<br></br>
-            </p>
-        </div>
-        </article>
+      </article>
 
-        <section className='Service-Errand'>
-        <div className='Service-Errand-Image'>
-            <img src={BabySitter} alt='Baby Sitter on duty' className='Service-Errand-Image-Img'/>
+      {/* Cooking Section */}
+      <section className="flex flex-col lg:flex-row mx-4 lg:mx-20 gap-8 lg:gap-16 my-10 lg:my-20">
+        <div className="flex-1">
+          <img src={Cook} alt="cook on duty" className="w-full h-auto rounded-lg shadow-md" />
         </div>
-        <div className='Service-Errand-Describe'>
-            <h1>BabySitting</h1>
-            <p>-Professional babysitting services for children of all ages. </p>
-            <p>-Activities to engage and entertain children.</p>
-            <p>-BAsic children tasks such as feeding, diaper changing, and ensuring safety.</p>
+        <div className="flex-1">
+          <h1 className="font-extrabold text-3xl lg:text-4xl leading-snug text-[#002A42] underline py-4 lg:py-6 font-sans">Cooking</h1>
+          <p className="font-light text-lg lg:text-xl leading-relaxed tracking-wide pb-6 lg:pb-10">
+            ChoreAid offers a flexible cooking service where customers provide all necessary ingredients, and our professional cooks provide the labor and expertise to prepare the meals.
+          </p>
+          <h2 className="font-extrabold text-xl leading-snug text-[#002A42] pb-3 lg:pb-5">1. Meal Preparation</h2>
+          <h2 className="font-extrabold text-xl leading-snug text-[#002A42] pb-3 lg:pb-5">2. Specialty Cooking</h2>
         </div>
-        </section>
+      </section>
 
-        <section className='Service-Errand'>
-        <div className='Service-Errand-Image'>
-            <img src={Errand} alt='Running Errands' className='Service-Errand-Image-Img' />
+      {/* Meal Preparation Details */}
+      <article className="mx-4 lg:mx-20">
+        <div className="grid gap-8 lg:gap-10">
+          <div>
+            <h2 className="pt-8 lg:pt-16 text-[#002A42] font-light text-xl lg:text-2xl">1. Meal Preparation</h2>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              ChoreAid offers three tiers of meal preparation services, each tailored to different needs and serving sizes.
+            </p>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">i. Basic Meal:</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">Description: Preparation of one dish serving 1-2 people.</p>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">Features:</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              - Ideal for small meals or individual servings.<br />
+              - Quick and efficient meal preparation.
+            </p>
+          </div>
+          <div>
+            <h2 className="pt-8 lg:pt-16 text-[#002A42] font-light text-xl lg:text-2xl">2. Specialty Cooking</h2>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              ChoreAid provides specialty cooking services for unique culinary needs and preferences.
+            </p>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">i. BBQ and Grill</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">Description: Expert preparation of BBQ and grilled dishes.</p>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">Features:</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              - Ideal for outdoor events and gatherings.<br />
+              - Professional grilling techniques.
+            </p>
+          </div>
+          <div>
+            <h2 className="pt-8 lg:pt-16 text-[#002A42] font-light text-xl lg:text-2xl">Large Cooking</h2>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              ChoreAid offers cooking services for larger groups and events, ensuring everyone is well-fed with delicious meals.
+            </p>
+            <h3 className="font-light text-lg lg:text-xl text-[#002A42]">i. 10-20 People</h3>
+            <p className="text-base lg:text-xl text-[#002A42]">Description: Preparation of meals serving 10-20 people.</p>
+            <p className="text-base lg:text-xl text-[#002A42]">
+              - Suitable for medium-sized gatherings and events.<br />
+              - Efficient and large-scale meal preparation.
+            </p>
+          </div>
         </div>
-        <div className='Service-Errand-Describe'>
-        <h1>Errand Running</h1>
-            <p>-Running various errands including grocery<br></br>
-            shopping, picking up prescriptions, and other<br></br>
-            personal tasks. </p>
-            <p>-Timely and efficient execution of errands as per <br></br>
-            customer requests.</p>
+      </article>
+
+      {/* Baby Sitting Section */}
+      <section className="flex flex-col lg:flex-row mx-4 lg:mx-20 gap-8 lg:gap-16 my-10 lg:my-20">
+        <div className="flex-1">
+          <img src={BabySitter} alt="Baby Sitter on duty" className="w-full h-auto rounded-lg shadow-md" />
         </div>
-        </section>
+        <div className="flex-1">
+          <h1 className="font-extrabold text-3xl lg:text-4xl leading-snug text-[#002A42] underline py-4 lg:py-6 font-sans">Baby Sitting</h1>
+          <p className="font-light text-lg lg:text-xl leading-relaxed tracking-wide pb-6 lg:pb-10">
+            - Professional babysitting services for children of all ages.<br />
+            - Activities to engage and entertain children.<br />
+            - Basic children tasks such as feeding, diaper changing, and ensuring safety.
+          </p>
+        </div>
+      </section>
+
+      {/* Running Errands Section */}
+      <section className="flex flex-col lg:flex-row mx-4 lg:mx-20 gap-8 lg:gap-16 my-10 lg:my-20">
+        <div className="flex-1">
+          <img src={Errand} alt="Running Errands" className="w-full h-auto rounded-lg shadow-md" />
+        </div>
+        <div className="flex-1">
+          <h1 className="font-extrabold text-3xl lg:text-4xl leading-snug text-[#002A42] underline py-4 lg:py-6 font-sans">Errand Running</h1>
+          <p className="font-light text-lg lg:text-xl leading-relaxed tracking-wide pb-6 lg:pb-10">
+            - ChoreAid helps customers with running errands like grocery shopping, picking up packages, or other miscellaneous tasks.
+          </p>
+        </div>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default serviceMid
+export default ServiceMid;

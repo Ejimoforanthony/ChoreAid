@@ -18,45 +18,84 @@ const HelpCenterBot = () => {
   return (
 
 <div>
-    <section className='reach'>
-        <h1>Reach out to Us!!!</h1>
-    <div className='reach-out'>
-        <div>
-            <p>
-                <img src={dialer} alt='dial'/>
-                <a href='"tel:+234764564535' target="_blank" title="Give Us a Call" rel="noopener noreferrer"> +234 7064654335</a>
-            </p>
-            <p>
-                <img src={gmail} alt='dail' />
-                <a href='mailto:choreaid@gmail.com' target="_blank" title="email" rel="noopener noreferrer">choreaid@gmail.com</a>
-            </p>
-        </div>
-        <form className="reachout-form" onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="email">Email:</label>
-                <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email"
-                required
-                />
-            </div>
-            <div>
-                 <label htmlFor="message">Message:</label>
-                 <textarea
-                 id="message"
-                 value={message}
-                 onChange={(e) => setMessage(e.target.value)}
-                 placeholder="Your message"
-                 required
-                 ></textarea>
+        <section className="bg-[#D8F0FE] py-16 reach">
+            <h1 className="font-[cabinet-grotesk] font-extrabold text-4xl leading-[55.8px] text-[#002A42] text-center mb-16">
+                Reach out to Us!!!
+            </h1>
+            <div className="flex flex-col-reverse lg:flex-row justify-between items-center reach-out">
+                <div className="flex flex-col justify-center mb-10 lg:mb-0 lg:ml-24">
+                    <p className="font-[cabinet-grotesk] font-medium text-2xl leading-[31px] flex items-center gap-5 pb-8">
+                        <img src={dialer} alt="dial" className="w-6" />
+                        <a
+                            href="tel:+234764564535"
+                            target="_blank"
+                            title="Give Us a Call"
+                            rel="noopener noreferrer"
+                            className="text-[#01121b] hover:underline"
+                        >
+                            +234 7064654335
+                        </a>
+                    </p>
+                    <p className="font-[cabinet-grotesk] font-medium text-2xl leading-[31px] flex items-center gap-5 pb-8">
+                        <img src={gmail} alt="email" className="w-6" />
+                        <a
+                            href="mailto:choreaid@gmail.com"
+                            target="_blank"
+                            title="Email"
+                            rel="noopener noreferrer"
+                            className="text-[#01121b] hover:underline"
+                        >
+                            choreaid@gmail.com
+                        </a>
+                    </p>
                 </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+                <form
+                    className="w-full max-w-lg flex flex-col gap-4 px-4 lg:mr-28 reachout-form"
+                    onSubmit={handleSubmit}
+                >
+                    <div>
+                        <label
+                            htmlFor="email"
+                            className="block text-gray-800 font-medium mb-2"
+                        >
+                            Email:
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Your email"
+                            required
+                            className="w-full px-4 py-3  border rounded-[10px] border-gray-300 bg-[#006299] text-white focus:outline-none"
+                        />
+                    </div>
+                    <div>
+                        <label
+                            htmlFor="message"
+                            className="block text-gray-800 font-medium mb-2"
+                        >
+                            Message:
+                        </label>
+                        <textarea
+                            id="message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            placeholder="Your message"
+                            required
+                            className="w-full px-4 py-3 rounded-2xl border border-gray-300 bg-[#006299] text-white focus:outline-none min-h-[150px]"
+                        ></textarea>
+                    </div>
+                    <button
+                        type="submit"
+                        className="py-3 px-6 bg-[#028DDB] text-white rounded-lg text-lg mx-auto lg:ml-auto hover:bg-[#0056b3] transition duration-300 w-full "
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
     <article className='policy'>
         <h1>Privacy Policy For ChoreAid!</h1>
         <p>

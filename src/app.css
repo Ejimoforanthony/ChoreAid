@@ -190,7 +190,7 @@ p{
 
 
 
-.HowItWorks {
+/* .HowItWorks {
     background-color: #D8F0FE;
     padding: 5rem 0;
 }
@@ -270,12 +270,12 @@ p{
     border-radius: 15px;
     padding: 13px;
     margin: 5% 15%;
-}
+} */
 
 
 
 
-.reach {
+/* .reach {
     background-color: #D8F0FE;
 }
 
@@ -371,7 +371,7 @@ p{
 
 .reachout-form button:hover {
     background-color: #0056b3;
-}
+} */
 
 /* .policy > h1{ 
     display: flex;
